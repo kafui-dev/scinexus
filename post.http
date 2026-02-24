@@ -1,0 +1,26 @@
+### Get all posts
+GET localhost:8080/api/
+
+### Get post by id
+GET http://localhost:8080/api/post-1
+
+### Get an invalid post by id
+GET http://localhost:8080/api/post-99
+
+
+### Create a new post
+POST http://localhost:8080/api/
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Post N°2 !",
+  "subheading": "The subheading is a masterpiece",
+  "slug": "slug-post-2",
+  "categoryId": 2,
+  "dateCreated": "2026-02-24T20:18:00",
+  "dateUpdated": null,
+  "author": "Kafui Homevo",
+  "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
+  "imagesListId": 2
+}
