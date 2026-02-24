@@ -13,6 +13,9 @@ import java.util.List;
 @RestController
 @RequestMapping("api/")
 @CrossOrigin
+/**
+ * Controller for the post model
+ */
 public class PostController {
 
     private PostRepository postRepository;
