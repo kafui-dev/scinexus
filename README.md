@@ -1,6 +1,11 @@
-# SciNexus
+# SciNexus: Spring Boot Backend for Blog Migration
+
+[![Language](https://img.shields.io/badge/language-Java_25-007396.svg)](https://www.oracle.com/java/)
+[![Framework](https://img.shields.io/badge/framework-Spring_Boot_4.0.3-6DB33F.svg)](https://spring.io/projects/spring-boot)
 
 SciNexus is a personal side-project developed for practice and to deepen my knowledge of **Java** and **Spring Boot**. The goal is to recreate the backend logic of an existing blog (currently on Framer) from scratch, providing a robust and scalable architecture.
+
+---
 
 ## 🚀 Purpose & Motivation
 
