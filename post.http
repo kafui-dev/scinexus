@@ -24,3 +24,43 @@ Content-Type: application/json
   "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
   "imagesListId": 2
 }
+
+### Updating post 2
+PUT http://localhost:8080/api/post-2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Post N°2 ! ---- Updated !",
+  "subheading": "(Updated) The subheading is a masterpiece",
+  "slug": "slug-post-2",
+  "categoryId": 2,
+  "dateCreated": "2026-02-26T22:10:00",
+  "dateUpdated": null,
+  "author": "Kafui Homevo",
+  "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
+  "imagesListId": 2
+}
+
+### Updating unexisting post
+PUT http://localhost:8080/api/post-99
+Content-Type: application/json
+
+{
+  "id": 99,
+  "title": "Post N°99 ! ---- Updated !",
+  "subheading": "(Updated) The subheading is a masterpiece",
+  "slug": "slug-post-2",
+  "categoryId": 2,
+  "dateCreated": "2026-02-26T22:10:00",
+  "dateUpdated": null,
+  "author": "Kafui Homevo",
+  "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
+  "imagesListId": 2
+}
+
+### Delete post 2
+DELETE localhost:8080/api/post-2
+
+### Delete unexisting post
+DELETE http://localhost:8080/api/post-99

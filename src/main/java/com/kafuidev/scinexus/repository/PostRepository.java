@@ -50,4 +50,8 @@ public class PostRepository {
         );
         postsList.add(post);
     }
+
+    public void delete(Integer id) {
+        postsList.removeIf(post -> post.id().equals(id));
+    }
 }

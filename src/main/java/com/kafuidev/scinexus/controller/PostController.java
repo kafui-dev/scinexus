@@ -46,6 +46,29 @@ public class PostController {
         postRepository.save(post);
     }
 
+    //Update
+    @PutMapping("/post-{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void update(@RequestBody Post post, @PathVariable Integer id){
+        //Making sure it already exists
+        if(postRepository.findById(id).isPresent()){
+            postRepository.save(post);
+        }else{
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Post not found !");
+        }
+    }
+
+    //Delete
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @DeleteMapping("post-{id}")
+    public void delete(@PathVariable Integer id){
+        if(postRepository.findById(id).isPresent()){
+            postRepository.delete(id);
+        }else {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Post not found !");
+        }
+    }
+
 
 
 
