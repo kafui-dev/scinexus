@@ -1,7 +1,6 @@
 package com.kafuidev.scinexus.controller;
 
-import com.kafuidev.scinexus.model.Post;
-import com.kafuidev.scinexus.repository.ImageRepository;
+import com.kafuidev.scinexus.model.post.Post;
 import com.kafuidev.scinexus.repository.PostRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -18,8 +17,9 @@ import java.util.List;
  */
 public class PostController {
 
-    private PostRepository postRepository;
-    private ImageRepository imageRepository;
+    //TODO: Instead of just image repository for each post, as each one has many images and the same for categories, we should add a list repository instead of just the repository
+    //TODO: add method to retrieve all the images from the id of the list and same for categories
+    private final PostRepository postRepository;
 
     public PostController(PostRepository postRepository) {
         this.postRepository = postRepository;
@@ -68,10 +68,5 @@ public class PostController {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Post not found !");
         }
     }
-
-
-
-
-
 
 }

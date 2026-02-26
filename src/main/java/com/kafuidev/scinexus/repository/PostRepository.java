@@ -1,6 +1,6 @@
 package com.kafuidev.scinexus.repository;
 
-import com.kafuidev.scinexus.model.Post;
+import com.kafuidev.scinexus.model.post.Post;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
@@ -11,9 +11,6 @@ import java.util.Optional;
 
 @Repository
 public class PostRepository {
-
-    private PostCategoryRepository postCategoryRepository;
-    private ImageRepository imageRepository;
 
     private final List<Post> postsList = new ArrayList<>();
 
@@ -34,6 +31,10 @@ public class PostRepository {
 
     @PostConstruct
     public void init() {
+        List<Integer> categoryIds = new ArrayList<>();
+        categoryIds.add(1);categoryIds.add(2);categoryIds.add(3);categoryIds.add(4);
+        List<Integer> imageIds = new ArrayList<>();
+        imageIds.add(1);imageIds.add(2);imageIds.add(3);imageIds.add(4);
         Post post = new Post(
                 1,
                 "First Post Title",
@@ -41,12 +42,12 @@ public class PostRepository {
                 "/first-post",
                 LocalDateTime.now(),
                 null,
-                1,
+                categoryIds,
                 "Kafui Homevo",
                 "# This is the title of the content." +
                         "## Formatted H2" +
                         "And text now. Great, let's keep going !",
-                1
+                imageIds
         );
         postsList.add(post);
     }

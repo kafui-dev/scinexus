@@ -1,10 +1,8 @@
-package com.kafuidev.scinexus.model;
+package com.kafuidev.scinexus.model.post;
 
 import jakarta.validation.constraints.NotBlank;
 
-import java.text.DateFormat;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 public record Post(
@@ -14,9 +12,9 @@ public record Post(
         String slug,
         LocalDateTime dateCreated,
         LocalDateTime dateUpdated,
-        Integer categoryId,
+        List<Integer> categoriesIdsList,
         String author,
         @NotBlank String content,
-        Integer imagesListId
+        List<Integer> imagesIdsList
 ) {
 }
