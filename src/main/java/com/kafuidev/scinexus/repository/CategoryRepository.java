@@ -1,9 +1,7 @@
 package com.kafuidev.scinexus.repository;
 
 import com.kafuidev.scinexus.model.category.Category;
-import com.kafuidev.scinexus.model.post.Post;
 import jakarta.annotation.PostConstruct;
-import jakarta.validation.Valid;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;

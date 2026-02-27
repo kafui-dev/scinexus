@@ -1,7 +1,6 @@
 package com.kafuidev.scinexus.controller;
 
 import com.kafuidev.scinexus.model.category.Category;
-import com.kafuidev.scinexus.model.post.Post;
 import com.kafuidev.scinexus.repository.CategoryRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -12,10 +11,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/categories/")
-/**
- * This is the controller to manage the categories.
- * This is not to list all the categories in a post. That will be done in the @PostController class itself.
- */
 public class CategoryController {
 
     private final CategoryRepository categoryRepository;
