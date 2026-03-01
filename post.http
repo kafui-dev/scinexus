@@ -19,10 +19,10 @@ Content-Type: application/json
   "slug": "slug-post-2",
   "dateCreated": "2026-02-24T20:18:00",
   "dateUpdated": null,
-  "categoriesIdsList": [2,3,4],
+  "category": "Technology",
   "author": "Kafui Homevo",
   "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
-  "imagesIdsList": [2,3,4]
+  "imageUrl": "https://example.com/image2.jpg"
 }
 
 ### Updating post 2
@@ -34,12 +34,12 @@ Content-Type: application/json
   "title": "Post N°2 ! ---- Updated !",
   "subheading": "(Updated) The subheading is a masterpiece",
   "slug": "slug-post-2",
-  "categoriesIdsList": [2,6,4],
+  "category": "Science",
   "dateCreated": "2026-02-26T22:10:00",
   "dateUpdated": null,
   "author": "Kafui Homevo",
   "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
-  "imagesIdsList": [2,3,4,8]
+  "imageUrl": "https://example.com/image2_updated.jpg"
 }
 
 ### Updating unexisting post
@@ -51,12 +51,12 @@ Content-Type: application/json
   "title": "Post N°99 ! ---- Updated !",
   "subheading": "(Updated) The subheading is a masterpiece",
   "slug": "slug-post-2",
-  "categoriesIdsList": [2,3,4],
+  "category": "Science",
   "dateCreated": "2026-02-26T22:10:00",
   "dateUpdated": null,
   "author": "Kafui Homevo",
   "content": "## Look, you're great ! \n### This is your gift \nYou know you deserve and are capable of more than that. I believe in you !",
-  "imagesIdsList": [2,3,4]
+  "imageUrl": "https://example.com/image99.jpg"
 }
 
 ### Delete post 2

@@ -1,0 +1,11 @@
+- DONE: NOTE : Instead of having to upload a pic, I'll just have it somewhere and send the link so it's an external resource.
+- DONE: Add spring data JDBC
+- Add sql schema in resources for persistence
+- Transform the repositories with the Repository Interfaces
+- Implement data loader as runnable (commandlinerunner) instead of schema ...? : This is *programmaticaly inserting new data*
+- Add functions like find post by title and else by :
+  - query derivation
+  - @Query() method (require specific SQL code; I do not plan to use this if not necessary)
+- Application.properties values to be passed in a home controller as a value
+- Use Configuration class to show welcome message 
+- Profiles

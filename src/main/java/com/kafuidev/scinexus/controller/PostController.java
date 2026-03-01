@@ -16,9 +16,6 @@ import java.util.List;
  * Controller for the post model
  */
 public class PostController {
-
-    //TODO: Instead of just image repository for each post, as each one has many images and the same for categories, we should add a list repository instead of just the repository
-    //TODO: add method to retrieve all the images from the id of the list and same for categories
     private final PostRepository postRepository;
 
     public PostController(PostRepository postRepository) {
@@ -42,8 +39,8 @@ public class PostController {
     //Create
     @PostMapping("")
     @ResponseStatus(HttpStatus.CREATED)
-    public void create(@Valid @RequestBody Post post){
-        postRepository.save(post);
+    public Post create(@Valid @RequestBody Post post){
+        return postRepository.save(post);
     }
 
     //Update
@@ -63,7 +60,7 @@ public class PostController {
     @DeleteMapping("post-{id}")
     public void delete(@PathVariable Integer id){
         if(postRepository.findById(id).isPresent()){
-            postRepository.delete(id);
+            postRepository.deleteById(id);
         }else {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Post not found !");
         }

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to SciNexus",
+    "subheading": "Welcome to our new platform",
+    "slug": "introduction-to-scinexus",
+    "dateCreated": "2026-03-01T00:00:00",
+    "dateUpdated": null,
+    "category": "Science",
+    "author": "Kafui Homevo",
+    "content": "Welcome to SciNexus, the place where science and technology meet.",
+    "imageUrl": "https://example.com/images/scinexus-intro.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Quantum Computing Trends",
+    "subheading": "What's next for 2026?",
+    "slug": "quantum-computing-trends-2026",
+    "dateCreated": "2026-03-01T10:00:00",
+    "dateUpdated": null,
+    "category": "Technology",
+    "author": "Alice Johnson",
+    "content": "Quantum computing is evolving faster than ever before.",
+    "imageUrl": "https://example.com/images/quantum.jpg"
+  },
+  {
+    "id": 3,
+    "title": "AI in Healthcare",
+    "subheading": "Revolutionizing diagnostics",
+    "slug": "ai-in-healthcare",
+    "dateCreated": "2026-03-01T11:00:00",
+    "dateUpdated": null,
+    "category": "Health",
+    "author": "Dr. Smith",
+    "content": "AI is changing how we diagnose and treat patients.",
+    "imageUrl": "https://example.com/images/ai-health.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Future of Space Travel",
+    "subheading": "Mars and beyond",
+    "slug": "future-of-space-travel",
+    "dateCreated": "2026-03-01T12:00:00",
+    "dateUpdated": null,
+    "category": "Space",
+    "author": "Elon Stardust",
+    "content": "Space travel is becoming more accessible for everyone.",
+    "imageUrl": "https://example.com/images/space.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Sustainable Energy Solutions",
+    "subheading": "Beyond solar and wind",
+    "slug": "sustainable-energy-solutions",
+    "dateCreated": "2026-03-01T13:00:00",
+    "dateUpdated": null,
+    "category": "Environment",
+    "author": "Green Energy Guru",
+    "content": "Exploring new ways to power our world sustainably.",
+    "imageUrl": "https://example.com/images/energy.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity in 2026",
+    "subheading": "Protecting your digital life",
+    "slug": "cybersecurity-in-2026",
+    "dateCreated": "2026-03-01T14:00:00",
+    "dateUpdated": null,
+    "category": "Technology",
+    "author": "Security Sam",
+    "content": "How to stay safe in an increasingly connected world.",
+    "imageUrl": "https://example.com/images/security.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The Rise of Biotechnology",
+    "subheading": "Editing the code of life",
+    "slug": "rise-of-biotechnology",
+    "dateCreated": "2026-03-01T15:00:00",
+    "dateUpdated": null,
+    "category": "Health",
+    "author": "Bio Beth",
+    "content": "Biotechnology is opening new frontiers in medicine.",
+    "imageUrl": "https://example.com/images/bio.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Robotics in Everyday Life",
+    "subheading": "From homes to factories",
+    "slug": "robotics-in-everyday-life",
+    "dateCreated": "2026-03-01T16:00:00",
+    "dateUpdated": null,
+    "category": "Technology",
+    "author": "Robo Rick",
+    "content": "Robots are becoming an integral part of our daily routines.",
+    "imageUrl": "https://example.com/images/robotics.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Deep Sea Exploration",
+    "subheading": "Uncovering the ocean's secrets",
+    "slug": "deep-sea-exploration",
+    "dateCreated": "2026-03-01T17:00:00",
+    "dateUpdated": null,
+    "category": "Space",
+    "author": "Oceanic Olivia",
+    "content": "The deep sea remains one of the least explored places on Earth.",
+    "imageUrl": "https://example.com/images/ocean.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Impact of 6G",
+    "subheading": "Faster than lightning",
+    "slug": "impact-of-6g",
+    "dateCreated": "2026-03-01T18:00:00",
+    "dateUpdated": null,
+    "category": "Technology",
+    "author": "Network Ned",
+    "content": "6G is set to revolutionize communication once again.",
+    "imageUrl": "https://example.com/images/6g.jpg"
+  }
+]

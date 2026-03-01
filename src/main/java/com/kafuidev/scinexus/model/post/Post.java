@@ -1,20 +1,21 @@
 package com.kafuidev.scinexus.model.post;
 
 import jakarta.validation.constraints.NotBlank;
+import org.springframework.data.annotation.Id;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public record Post(
+        @Id
         Integer id,
         @NotBlank String title,
         String subheading,
         String slug,
         LocalDateTime dateCreated,
         LocalDateTime dateUpdated,
-        List<Integer> categoriesIdsList,
+        String category,
         String author,
         @NotBlank String content,
-        List<Integer> imagesIdsList
+        String imageUrl
 ) {
 }
